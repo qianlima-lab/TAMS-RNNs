@@ -62,7 +62,7 @@ if __name__ == '__main__':
                          "period": [1, 2, 4, 8]
                           }   
                                               
-    list_dir = ['BasicMotions', 'ArticularyWordRecognition', 'NATOPS', 'FaceDetection', 'HandMovementDirection']
+    list_dir = ['BasicMotions', 'ArticularyWordRecognition', 'NATOPS', 'HandMovementDirection']
     
     for dataset_name in list_dir:
         #Loading data  
