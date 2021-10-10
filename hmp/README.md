@@ -1,4 +1,4 @@
-## Download the dataset:
+Download the dataset
 ```
 mkdir dataset
 cd dataset
@@ -9,7 +9,7 @@ rm h3.6m.zip
 cd ..
 ```
 
-## You can run the command 
+You can run the command 
 ```
 python main.py | tee result.txt
 ```
