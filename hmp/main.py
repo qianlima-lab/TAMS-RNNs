@@ -23,7 +23,7 @@ os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 import data_utils
-import tprnn_basic_model
+import basic_model
 
 
 # Learning
@@ -97,7 +97,7 @@ def create_model(session, sampling=False):
   K.set_session(session)
 
   if FLAGS.model == 'basic':
-    model = tprnn_basic_model.TPRNNBasicModel(
+    model = basic_model.TPRNNBasicModel(
       FLAGS.dataset,
       FLAGS.seq_length_in if not sampling else 50,
       FLAGS.seq_length_out,# if not sampling else 100,
